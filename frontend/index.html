@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Eligibility Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Check Course Eligibility</h2>
+
+    <!-- Input field for register number -->
+    <input type="text" id="register_number" placeholder="Enter Register Number" autocomplete="off" />
+
+    <!-- Loader for student info fetch -->
+    <div id="loading" class="loading" style="display: none;"></div>
+
+    <!-- Display student info in a separate section -->
+    <div id="student_info" class="student-info"></div>
+
+    <!-- Input field for course title with autocomplete suggestions -->
+    <input type="text" id="course_title" placeholder="Enter Course Title" autocomplete="off" oninput="fetchCourseSuggestions()" />
+
+    <!-- Suggestions list for autocomplete, with aria-live for accessibility -->
+    <ul id="suggestions" class="suggestions" aria-live="polite"></ul>
+
+    <!-- Button for checking course eligibility -->
+    <button onclick="checkEligibility()">Check Course Eligibility</button>
+
+    <!-- Display eligibility message here -->
+    <div id="message" class="message"></div>
+    <div id="relevant_courses" class="relevant-courses"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

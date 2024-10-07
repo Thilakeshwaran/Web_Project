@@ -1,0 +1,181 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Heading */
+h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #4CAF50;
+}
+
+/* Input Fields */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+/* Valid input field */
+input[type="text"].valid {
+    border-color: green;
+}
+
+/* Invalid input field */
+input[type="text"].invalid {
+    border-color: red;
+}
+
+/* Button */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Loader Styling */
+.loading {
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 30px;
+    height: 30px;
+    margin: 10px auto;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Student Info Section */
+.student-info {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+/* Message Styling */
+.message {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+}
+
+/* Success Message */
+.message.success {
+    color: green;
+}
+
+/* Error Message */
+.message.error {
+    color: red;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
+
+
+/* Suggestions list */
+.suggestions {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    background-color: white;
+    width: auto; /* Dynamically adjust the width based on content */
+    min-width: 200px; /* Set a minimum width for better UI */
+    max-width: 300px; /* Optional: Set a maximum width if needed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it appears above other content */
+    left: 50%;
+    transform: translateX(-50%); /* Center the suggestions box */
+}
+
+/* Suggestions list items */
+.suggestions li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.suggestions li:hover {
+    background-color: #f4f4f4;
+}
+
+.suggestions li:active {
+    background-color: #e0e0e0;
+} */
+
+
+/* Styling for relevant course suggestions */
+.relevant-courses {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    text-align: left;
+    color: #333;
+}
+
+/* List styling for course suggestions */
+.relevant-courses ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.relevant-courses ul li {
+    margin-bottom: 5px;
+}
