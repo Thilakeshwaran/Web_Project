@@ -244,6 +244,7 @@ def check_eligibility():
         return jsonify({"message": f"Error occurred: {str(e)}", "status": "error"}), 500
 
     
+
 # API to fetch course suggestions based on register number and partial course title
 @app.route('/get_course_suggestions', methods=['POST'])
 def get_course_suggestions():
@@ -291,3 +292,4 @@ def get_course_suggestions():
 
 if __name__ == '__main__':
     app.run(debug=True, port=5001)
+
